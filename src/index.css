@@ -1,0 +1,41 @@
+html, body, #root {
+  margin: 0;
+  width: 480px;
+  min-width: 480px;
+  max-width: none;
+  min-height: 0;
+  background: #eef3f9;
+  font-family: Inter, 'Segoe UI', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#root {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, input {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b7c5d8;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}

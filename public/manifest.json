@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Fill Assistant",
+  "version": "2.0.0",
+  "description": "Modern browser form auto-fill assistant built with React and Material UI.",
+  "permissions": ["activeTab", "storage", "tabs", "scripting"],
+  "action": {
+    "default_title": "Auto Fill Assistant",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
